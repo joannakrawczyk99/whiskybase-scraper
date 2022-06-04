@@ -27,7 +27,7 @@ row_2 = table.tbody.find_all(
     "tr",
     attrs={"class": "mp-whisky-item-secondrow"})
 
-whisky_data = []
+#whisky_data = []
 
 # if len(row_1) == len(row_2):
 #     for i in range(len(row_1)):
@@ -45,12 +45,31 @@ if len(row_1) == len(row_2):
     for i in range(len(row_1)):
         whisky_names.append(get_whisky_name(row_1[i]))
 
+whisky_urls = []
+if len(row_1) == len(row_2):
+    for i in range(len(row_1)):
+        whisky_urls.append(get_whisky_url(row_1[i]))
+
+bottle_price = []
+if len(row_1) == len(row_2):
+    for i in range(len(row_1)):
+        bottle_price.append(get_bottle_price(row_2[i]))
+
+bottle_img = []
+if len(row_1) == len(row_2):
+    for i in range(len(row_1)):
+        bottle_img.append(get_bottle_img_url)
+
+# amount_user_ratings = []
+# if len(row_1) == len(row_2):
+#     for i in range(len(row_1)):
+#         amount_user_ratings.append(get_amount_of_ratings(row_2[i]))
+
 app = Flask(__name__, template_folder='templates')
-
-
 @app.route("/")
 def main_page():
-    return render_template("index.html", len=len(whisky_names), whisky_name=whisky_names)
+    return render_template("index.html", len=len(whisky_names), whisky_names=whisky_names, whisky_urls=whisky_urls,
+                           bottle_price=bottle_price, bottle_img=bottle_img)
 
 
 if __name__ == '__main__':

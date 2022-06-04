@@ -55,7 +55,6 @@ def get_user_rating(row):
 
     return user_rating
 
-
 def get_amount_of_ratings(row):
     # scraping user ratings
     return row.find(

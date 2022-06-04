@@ -2,13 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Whiskybase</title>
+    <style>
+        body{
+            background-color: #E5CB9F;
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div{
+            padding: 5px;
+            padding-left: 20px;
+            padding-right: 5px;
+            padding-bottom: 5px;
+        }
+        .divcol{
+        background-color: linen;
+        }
+        .photo{
+            height: 200px;
+            width: 200px;
+        }
+    </style>
 </head>
 <body>
-<ol>
+<div class = "divcol">
 {%for i in range(0, len)%}
-    <li>{{whisky_name[i]}}</li>
+    <img class = "photo" src = {{bottle_img[i]}}>
+    <p>{{whisky_names[i]}}</p>
+    <p>{{whisky_urls[i]}}</p>
+    <p>{{bottle_price[i]}}</p>
 {%endfor%}
-</ol>
+</div>
 </body>
 </html>
