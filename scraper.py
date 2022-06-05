@@ -1,5 +1,6 @@
 import re
 
+
 def get_whisky_name(row):
     # scraping a name of the whisky
     return row.find(
@@ -54,6 +55,7 @@ def get_user_rating(row):
         attrs={"bottle-rating"}))
 
     return user_rating
+
 
 def get_amount_of_ratings(row):
     # scraping user ratings

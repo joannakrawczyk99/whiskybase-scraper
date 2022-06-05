@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content=""width="device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content=""ie="edge">
     <title>Whiskybase</title>
+    <link rel="stylesheet" href="css/main.css">
     <style>
         body{
             background-color: #E5CB9F;
@@ -26,6 +29,46 @@
     </style>
 </head>
 <body>
+    <div class="hero-bg">
+        <section class="top">
+            <header>
+                <a href="#">Whiskeybase</a>
+
+                <nav>
+                    <ul>
+                        <li><a href="#">home</a> </li>
+                        <li><a href="#">about</a> </li>
+                        <li><a href="#">services</a> </li>
+                        <li><a href="#">Find a whiskey</a> </li>
+                        <li><a href="#">Estimate value</a> </li>
+                        <li><a href="#">Value Indicator</a> </li>
+                    </ul>
+                </nav>
+            </header>
+            <h1>Get familiar <span>with whiskey</span></h1>
+
+            <p>We would love you to deliver you the best siuted whiskey to your wallet</p>
+
+            <div class="form-container">
+                <form action="">
+                    <div class="form-left">
+                        <label for="whiskey brand">Enteryour delicious whiskey:</label>
+                        <input type="text" name="whiskey brand" id="whiskey brand">
+                        <p>Example: "Longrow 13-year-old"</p>
+                    </div>
+                    <input type="button" value="Find Whiskey, do it NOW! ">
+                </form>
+
+        </section>
+    </div>
+    <section class="authentic">
+        <div class="right-col">
+            <h2>Be Authentic</h2>
+            <p>Delicious it is!</p>
+        </div>
+        <img src="https://th.bing.com/th/id/OIP.Tcw4Vm6pB8rSlFUiAQXcuQHaHa?w=186&h=186&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="Here is your beautiful barell">
+    </section>
+
 <div class = "divcol">
 {%for i in range(0, len)%}
     <img class = "photo" src = {{bottle_img[i]}}>

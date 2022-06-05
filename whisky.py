@@ -54,5 +54,3 @@ class Whisky:
 
     def bottle_price_return(self):
         return self.bottle_price
-
-

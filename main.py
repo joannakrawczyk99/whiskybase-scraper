@@ -27,7 +27,7 @@ row_2 = table.tbody.find_all(
     "tr",
     attrs={"class": "mp-whisky-item-secondrow"})
 
-#whisky_data = []
+# whisky_data = []
 
 # if len(row_1) == len(row_2):
 #     for i in range(len(row_1)):
@@ -66,6 +66,8 @@ if len(row_1) == len(row_2):
 #         amount_user_ratings.append(get_amount_of_ratings(row_2[i]))
 
 app = Flask(__name__, template_folder='templates')
+
+
 @app.route("/")
 def main_page():
     return render_template("index.html", len=len(whisky_names), whisky_names=whisky_names, whisky_urls=whisky_urls,
