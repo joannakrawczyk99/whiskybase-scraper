@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300");
 
 /* Custom Properties */
 
@@ -6,29 +6,43 @@
     --leading: 2em;
 }
 
+.photo{
+    width: 400px;
+    }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
     margin: 0;
+    padding: 10px;
+    background-color: linen;
 }
 
 .hero-bg {
-    background: #307D99 url('https://img.myloview.pl/fototapety/weathered-wood-texture-with-paint-spots-vintage-wooden-desk-surface-natural-material-brown-timber-planks-background-rustic-old-fence-with-cracks-700-197428317.jpg');
+    background: #307D99 url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Adobe_guadalupe_wine_barrel.jpg/640px-Adobe_guadalupe_wine_barrel.jpg');
     background-size: cover;
     color: white;
     text-align: center;
-    padding-bottom: 4em;
 }
+
+
+div{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    border: 5px solid #CE9461;
+    }
+
 
 header {
-    padding: 1em 0;
+    padding: 20 px ;
 }
 
-.hero-bg a {
+a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 20px;
 }
 
 section {
@@ -48,16 +62,6 @@ h1 span {
     z-index: 1;
 }
 
-h1 span::before {
-    content: ' ';
-    position: absolute;
-    width: 3em;
-    background: #00BFFF;
-    height: .4em;
-    bottom: 0;
-    z-index: -1;
-    margin-left: -.3em;
-}
 
 .hero-bg p {
     font-weight: bold;
@@ -129,7 +133,7 @@ h2::before {
     content: ' ';
     position: absolute;
     width: 8em;
-    background: #00BFFF;
+    background: #cc7722;
     height: .4em;
     bottom: 0;
     z-index: -1;
@@ -137,11 +141,8 @@ h2::before {
 }
 
 img {
+    padding: 10%;
     width: 100%;
-}
-
-p {
-    line-height: var(--leading);
 }
 
 .overlay {
@@ -244,9 +245,7 @@ p {
     }
 }
 
-.top {
-    animation: fadeIn 2s forwards;
-}
+
 
 @keyframes fadeIn {
     from {
