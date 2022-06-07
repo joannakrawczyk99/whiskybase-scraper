@@ -79,6 +79,11 @@ def market_page():
     return render_template("market.html", len=len(whisky_names), whisky_names=whisky_names, whisky_urls=whisky_urls,
                            bottle_price=bottle_price, bottle_img=bottle_img)
 
+@app.route("/search")
+def search_page():
+    return render_template("search.html", len=len(whisky_names), whisky_names=whisky_names, whisky_urls=whisky_urls,
+                           bottle_price=bottle_price, bottle_img=bottle_img)
+
 
 if __name__ == '__main__':
     app.run()
