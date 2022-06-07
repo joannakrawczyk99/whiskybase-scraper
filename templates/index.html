@@ -5,10 +5,13 @@
     <meta name="viewport" content=""width="device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content=""ie="edge">
     <title>Whiskybase</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../static/main.css">
     <style>
+
+
         body{
             background-color: #E5CB9F;
+
         }
         p{
             font-family: Arial, Helvetica, sans-serif;
@@ -36,12 +39,8 @@
 
                 <nav>
                     <ul>
-                        <li><a href="#">home</a> </li>
-                        <li><a href="#">about</a> </li>
-                        <li><a href="#">services</a> </li>
-                        <li><a href="#">Find a whiskey</a> </li>
-                        <li><a href="#">Estimate value</a> </li>
-                        <li><a href="#">Value Indicator</a> </li>
+                        <li><a href="index.html">home</a> </li>
+                        <li><a href="market.html">market</a> </li>
                     </ul>
                 </nav>
             </header>
@@ -52,13 +51,12 @@
             <div class="form-container">
                 <form action="">
                     <div class="form-left">
-                        <label for="whiskey brand">Enteryour delicious whiskey:</label>
+                        <label for="whiskey brand">Enter your delicious whiskey:</label>
                         <input type="text" name="whiskey brand" id="whiskey brand">
                         <p>Example: "Longrow 13-year-old"</p>
                     </div>
                     <input type="button" value="Find Whiskey, do it NOW! ">
                 </form>
-
         </section>
     </div>
     <section class="authentic">
@@ -69,14 +67,5 @@
         <img src="https://th.bing.com/th/id/OIP.Tcw4Vm6pB8rSlFUiAQXcuQHaHa?w=186&h=186&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="Here is your beautiful barell">
     </section>
 
-<div class = "divcol">
-{%for i in range(0, len)%}
-    <img class = "photo" src = {{bottle_img[i]}}>
-    <p>{{whisky_names[i]}}</p>
-    <p>{{whisky_urls[i]}}</p>
-    <p>{{bottle_price[i]}}</p>
-{%endfor%}
-
-    </div>
 </body>
 </html>

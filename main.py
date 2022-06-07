@@ -1,4 +1,5 @@
 import requests
+import urllib.parse
 from bs4 import BeautifulSoup
 from flask import Flask, render_template
 
@@ -58,7 +59,7 @@ if len(row_1) == len(row_2):
 bottle_img = []
 if len(row_1) == len(row_2):
     for i in range(len(row_1)):
-        bottle_img.append(get_bottle_img_url)
+        bottle_img.append(get_bottle_img_url(row_1[i]))
 
 # amount_user_ratings = []
 # if len(row_1) == len(row_2):
@@ -71,6 +72,11 @@ app = Flask(__name__, template_folder='templates')
 @app.route("/")
 def main_page():
     return render_template("index.html", len=len(whisky_names), whisky_names=whisky_names, whisky_urls=whisky_urls,
+                           bottle_price=bottle_price, bottle_img=bottle_img)
+
+@app.route("/market")
+def market_page():
+    return render_template("market.html", len=len(whisky_names), whisky_names=whisky_names, whisky_urls=whisky_urls,
                            bottle_price=bottle_price, bottle_img=bottle_img)
 
 
