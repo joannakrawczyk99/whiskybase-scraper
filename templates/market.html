@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=""width="device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content=""ie="edge">
+    <title>Whiskybase market</title>
+    <link rel="stylesheet" href="../static/main.css">
+</head>
+<body>
+
+
+{%for i in range(0, len)%}
+    <div>
+    <img class = "photo" src = {{bottle_img[i]}}>
+    <p>{{whisky_names[i]}}</p>
+    <p>{{whisky_urls[i]}}</p>
+    <p>{{bottle_price[i]}}</p>
+    </div>
+{%endfor%}
+
+</body>
+</html>
