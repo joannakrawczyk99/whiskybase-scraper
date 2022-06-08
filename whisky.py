@@ -23,17 +23,6 @@ class Whisky:
         self.amount_of_ratings = amount_of_ratings
         self.bottle_price = bottle_price
 
-    # def __str__(self):
-    #     return {
-    #         "Whisky name": self.whisky_name,
-    #         "Whisky URL address": self.whisky_url,
-    #         "Bottle URL address": self.bottle_image_url,
-    #         "Whisky rating": self.whisky_rating,
-    #         "User rating": self.user_rating,
-    #         "Amount of user ratings": self.amount_of_ratings,
-    #         "Bottle price": self.bottle_price
-    #     }
-
     def whisky_name_return(self):
         return self.whisky_name
 

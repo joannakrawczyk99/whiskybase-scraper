@@ -1,13 +1,15 @@
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300");
 
-/* Custom Properties */
 
 :root {
     --leading: 2em;
 }
 
 .photo{
-    width: 400px;
+    display: block;
+    height: 100%;
+    width: auto;
+    max-height: 250px;
     }
 
 body {
