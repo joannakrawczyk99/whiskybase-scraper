@@ -37,7 +37,7 @@ def get_bottle_price(row):
 
 
 def get_whisky_rating(row):
-    # scraping whisky rating
+    # scraping the whisky rating
     temp = row.find(
         "dl",
         attrs={"dl-horizontal"}).get_text().strip()
